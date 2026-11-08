@@ -1,6 +1,6 @@
 # Conteúdo Duvidoso · Julien Reis Ossola
 
-Prévia do novo EP de Julien Reis Ossola: as guias vocais das seis músicas e as letras. Músicas escritas e produzidas por Julien Reis Ossola, com vocais de Filipe Barbosa. São versões demo cantadas pelo próprio Julien, sem mixagem.
+Prévia do novo EP de Julien Reis Ossola: as guias vocais das seis músicas e as letras. Músicas escritas e produzidas por Julien Reis Ossola, com vocais de Filipe Alves Barbosa. São versões demo cantadas pelo próprio Julien, sem mixagem.
 
 Página: https://leonardoreis-code.github.io/conteudo-duvidoso-previa/
 
