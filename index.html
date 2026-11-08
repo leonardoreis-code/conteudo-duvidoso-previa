@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="author" content="Julien Reis Ossola">
+<meta name="description" content="Conteúdo Duvidoso, novo EP de Julien Reis Ossola: as guias das seis músicas e as letras.">
+<meta property="og:title" content="Conteúdo Duvidoso · Julien Reis Ossola">
+<meta property="og:description" content="Prévia do novo EP de Julien Reis Ossola, com voz de Filipi Barbosa.">
+<title>Conteúdo Duvidoso · Julien Reis Ossola</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2315130F'/%3E%3Crect x='5' y='13' width='22' height='6' fill='%23D9F94A'/%3E%3C/svg%3E">
+<style>
+:root{
+  --fundo:#15130F; --fundo2:#1E1B16; --papel:#F2EDE3; --suave:#A39B8E; --linha:rgba(242,237,227,.14);
+  --acido:#D9F94A; --coral:#FF5B3A; --raio:14px;
+  --display:"Bricolage Grotesque",system-ui,sans-serif; --texto:Inter,system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--fundo);color:var(--papel);font:16px/1.6 var(--texto);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+img{display:block;max-width:100%}
+.pular{position:absolute;left:-999px;top:8px;background:var(--acido);color:var(--fundo);padding:8px 12px;border-radius:6px;z-index:10}
+.pular:focus{left:16px}
+.miolo{width:min(1120px,100% - 32px);margin-inline:auto}
+.rotulo{font:500 12px/1.2 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--suave)}
+
+/* topo */
+.barra{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;border-bottom:1px solid var(--linha)}
+.barra .nome{font:800 15px/1 var(--display);letter-spacing:.02em;text-transform:uppercase}
+.barra .aviso{font:500 11px/1.2 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--fundo);background:var(--acido);padding:6px 10px;border-radius:999px;white-space:nowrap}
+
+/* capa */
+.capa{position:relative;padding:72px 0 56px;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end}
+.titulo{font:800 clamp(52px,11.5vw,148px)/.86 var(--display);letter-spacing:-.035em;margin:18px 0 0;text-transform:uppercase}
+.titulo .l{display:block;position:relative;width:max-content;max-width:100%}
+.tarja{position:absolute;top:40%;height:26%;background:var(--acido);border-radius:4px;transform-origin:left;animation:tarja 5.5s cubic-bezier(.7,0,.2,1) infinite}
+.l1 .tarja{left:-1%;width:52%;animation-delay:.2s}
+.l2 .tarja{left:38%;width:64%;background:var(--coral);animation-delay:1.1s}
+@keyframes tarja{0%,12%{transform:scaleX(0)}28%,62%{transform:scaleX(1)}78%,100%{transform:scaleX(0);transform-origin:right}}
+.capa .sub{max-width:620px;font-size:clamp(17px,2.1vw,21px);line-height:1.5;margin:28px 0 0;color:#E4DED2}
+.capa .sub b{color:var(--papel)}
+.capa .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.capa .meta span{border:1px solid var(--linha);border-radius:999px;padding:6px 12px;font:500 12px/1 var(--mono);color:var(--suave)}
+.selo{width:190px;height:190px;animation:gira 28s linear infinite}
+@keyframes gira{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.tarja,.selo{animation:none}.tarja{transform:scaleX(1)}}
+
+/* faixas */
+.secao{padding:56px 0;border-top:1px solid var(--linha)}
+.secao>header{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;margin-bottom:28px}
+.secao h2{font:800 clamp(30px,5vw,48px)/1 var(--display);letter-spacing:-.02em;margin:0}
+.secao h2.rotulo{font:500 12px/1.2 var(--mono);letter-spacing:.14em}
+.faixas{display:grid;gap:18px}
+.faixa{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:0;background:var(--fundo2);border:1px solid var(--linha);border-radius:var(--raio);overflow:hidden}
+.faixa.tocando{border-color:var(--acido)}
+.lado{padding:24px;display:flex;flex-direction:column;gap:14px}
+.num{font:800 64px/.8 var(--display);color:transparent;-webkit-text-stroke:1.5px var(--suave)}
+.faixa.tocando .num{-webkit-text-stroke-color:var(--acido)}
+.faixa h3{font:700 clamp(24px,3vw,30px)/1.1 var(--display);margin:0}
+.faixa .por{font:500 12px/1.3 var(--mono);color:var(--suave);letter-spacing:.06em}
+.faixa .nota{margin:0;color:#D6D0C4;font-size:15px}
+.player{display:grid;grid-template-columns:52px 1fr;gap:14px;align-items:center;margin-top:auto}
+.play{width:52px;height:52px;border-radius:50%;border:0;background:var(--acido);color:var(--fundo);cursor:pointer;display:grid;place-items:center;transition:transform .15s}
+.play:hover{transform:scale(1.06)}
+.play:focus-visible,.busca:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
+.play svg{width:20px;height:20px}
+.onda{position:relative;height:48px}
+.onda svg{width:100%;height:100%;display:block}
+.onda rect{fill:rgba(242,237,227,.22);transition:fill .1s}
+.onda rect.on{fill:var(--acido)}
+.busca{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;margin:0}
+.tempo{grid-column:2;display:flex;justify-content:space-between;font:400 11px/1 var(--mono);color:var(--suave);margin-top:-6px}
+.embreve{margin-top:auto;font:500 12px/1.4 var(--mono);color:var(--suave);border:1px dashed var(--linha);border-radius:10px;padding:12px 14px}
+.letra{padding:24px 28px;background:#F2EDE3;color:#1E1B16;position:relative}
+.letra .rotulo{color:#7A7266;margin-bottom:12px;display:flex;justify-content:space-between}
+.letra pre{margin:0;white-space:pre-wrap;font:400 16px/1.75 var(--texto);max-height:460px;overflow:auto;padding-right:6px}
+.letra::before{content:"";position:absolute;left:0;top:24px;bottom:24px;width:4px;background:var(--coral);border-radius:0 4px 4px 0}
+
+/* creditos */
+.creditos{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.credito{border-top:2px solid var(--acido);padding-top:14px}
+.credito b{display:block;font:700 22px/1.15 var(--display);margin:6px 0 4px}
+.credito p{margin:0;color:#D6D0C4;font-size:15px}
+
+/* trajetoria */
+.antes{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.obra{background:var(--fundo2);border:1px solid var(--linha);border-radius:var(--raio);overflow:hidden;display:flex;flex-direction:column}
+.obra .arte{aspect-ratio:1;position:relative;overflow:hidden}
+.obra .arte img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.obra:hover .arte img{transform:scale(1.04)}
+.obra .mosaico{display:grid;grid-template-columns:1fr 1fr;height:100%}
+.obra .corpo{padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px;flex:1}
+.obra h3{font:700 20px/1.15 var(--display);margin:0}
+.obra p{margin:0;font-size:14px;color:#D6D0C4}
+.obra .links{margin-top:auto;padding-top:10px;display:flex;flex-direction:column;gap:4px}
+.obra .links a{font:500 12px/1.35 var(--mono);color:var(--acido);text-underline-offset:3px;word-break:break-all}
+.ilustra{margin-top:18px;display:grid;grid-template-columns:120px 1fr;gap:18px;align-items:center;border:1px solid var(--linha);border-radius:var(--raio);padding:14px;background:var(--fundo2)}
+.ilustra img{width:120px;height:120px;object-fit:cover;border-radius:10px}
+.ilustra p{margin:0;color:#D6D0C4}
+.acess{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;background:var(--acido);color:var(--fundo);border-radius:var(--raio);padding:22px 24px}
+.acess p{margin:0;font-size:17px;line-height:1.5}
+.acess svg{width:56px;height:56px}
+footer{padding:36px 0 48px;border-top:1px solid var(--linha);color:var(--suave);font-size:14px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer b{color:var(--papel)}
+
+@media (max-width:900px){
+  .capa{grid-template-columns:1fr;padding-top:44px}
+  .selo{width:132px;height:132px;order:2}
+  .faixa{grid-template-columns:1fr}
+  .antes{grid-template-columns:1fr 1fr}
+  .creditos{grid-template-columns:1fr}
+}
+@media (max-width:520px){
+  .selo{width:112px;height:112px}
+  .barra .aviso{font-size:10px}
+  .antes{grid-template-columns:1fr}
+  .ilustra{grid-template-columns:84px 1fr}.ilustra img{width:84px;height:84px}
+  .letra{padding:20px 20px 20px 24px}
+}
+</style>
+</head>
+<body>
+<a class="pular" href="#guias">Ir para as músicas</a>
+
+<div class="miolo">
+  <div class="barra">
+    <span class="nome">Julien Reis Ossola</span>
+    <span class="aviso">Prévia · guias de voz</span>
+  </div>
+
+  <section class="capa" aria-labelledby="titulo">
+    <div>
+      <div class="rotulo">Novo EP de Julien Reis Ossola · 6 faixas</div>
+      <h1 class="titulo" id="titulo">
+        <span class="l l1">Conteúdo<span class="tarja" aria-hidden="true"></span></span>
+        <span class="l l2">Duvidoso<span class="tarja" aria-hidden="true"></span></span>
+      </h1>
+      <p class="sub">Seis músicas inéditas de <b>Julien Reis Ossola</b>, com a voz de <b>Filipi Barbosa</b>. O que você ouve aqui são as guias: gravações caseiras, feitas para mostrar melodia, letra e estrutura antes da produção.</p>
+      <div class="meta">
+        <span>Composição e produção: Julien Reis Ossola</span>
+        <span>Campos dos Goytacazes · RJ</span>
+        <span>Funcultura · Edital 05/2026 · Categoria D</span>
+      </div>
+    </div>
+    <svg class="selo" viewBox="0 0 200 200" role="img" aria-label="Selo: Julien Reis Ossola, prévia do EP, 2026">
+      <defs><path id="circulo" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+      <circle cx="100" cy="100" r="96" fill="none" stroke="#FF5B3A" stroke-width="2"/>
+      <circle cx="100" cy="100" r="62" fill="none" stroke="#FF5B3A" stroke-width="1.5" stroke-dasharray="3 5"/>
+      <text font-family="IBM Plex Mono, monospace" font-size="13" letter-spacing="3.2" fill="#FF5B3A"><textPath href="#circulo">JULIEN REIS OSSOLA · PRÉVIA DO EP · 2026 ·</textPath></text>
+      <g fill="#D9F94A"><rect x="66" y="88" width="68" height="24" rx="3"/></g>
+      <text x="100" y="105" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="16" letter-spacing="1" fill="#15130F">C·D</text>
+    </svg>
+  </section>
+</div>
+
+<main class="miolo">
+  <section class="secao" id="guias" aria-labelledby="t-guias">
+    <header>
+      <h2 id="t-guias">As guias</h2>
+      <span class="rotulo">Voz e base · sem mixagem · letra ao lado</span>
+    </header>
+    <div class="faixas" id="faixas"></div>
+  </section>
+
+  <section class="secao" aria-labelledby="t-quem">
+    <header><h2 id="t-quem">Quem faz</h2></header>
+    <div class="creditos">
+      <div class="credito"><span class="rotulo">Composição, arranjos, produção e mixagem</span><b>Julien Reis Ossola</b><p>Compositor e produtor de Campos dos Goytacazes. Fez o Maëju, com Marconi Sampaio, e o Kaedro. Neste EP, também faz a capa e os vídeos de letra.</p></div>
+      <div class="credito"><span class="rotulo">Voz</span><b>Filipi Barbosa</b><p>Cantou todas as faixas do Spectralia, EP do Kaedro lançado em 2018. Volta a gravar com Julien neste disco.</p></div>
+      <div class="credito"><span class="rotulo">Produção executiva</span><b>Leonardo Reis Manhães</b><p>Cuida de contratos, estúdio, masterização, distribuição e do lançamento online.</p></div>
+    </div>
+  </section>
+
+  <section class="secao" aria-labelledby="t-antes">
+    <header><h2 id="t-antes">Antes deste EP</h2><span class="rotulo">Trabalhos de Julien Reis Ossola</span></header>
+    <div class="antes">
+      <article class="obra">
+        <div class="arte"><div class="mosaico"><img src="img/maeju-entretanto.jpg" alt="Capa de Entretanto, do Maëju"><img src="img/maeju-indecisao.jpg" alt="Capa de Indecisão, do Maëju"><img src="img/maeju-lagrima-distante.jpg" alt="Capa de Lágrima Distante, do Maëju"><img src="img/maeju-musica-verde.jpg" alt="Capa de Música Verde, do Maëju"></div></div>
+        <div class="corpo"><span class="rotulo">2014 a 2016</span><h3>Maëju</h3><p>Duo com Marconi Sampaio. Sete faixas e quatro videoclipes, com mais de 7 mil visualizações no YouTube.</p>
+          <div class="links"><a href="https://www.youtube.com/@maejuoficial8678">youtube.com/@maejuoficial8678</a><a href="https://soundcloud.com/maeju">soundcloud.com/maeju</a></div></div>
+      </article>
+      <article class="obra">
+        <div class="arte"><img src="img/spectralia.jpg" alt="Capa do EP Spectralia, do Kaedro"></div>
+        <div class="corpo"><span class="rotulo">EP · 2018</span><h3>Kaedro · Spectralia</h3><p>Synthpop indie em sete faixas. Escrito, arranjado, gravado e mixado por Julien, com Filipi Barbosa na voz.</p>
+          <div class="links"><a href="https://soundcloud.com/julienossola/sets/kedro-spectralia">soundcloud.com/julienossola/sets/kedro-spectralia</a></div></div>
+      </article>
+      <article class="obra">
+        <div class="arte"><img src="img/homunculo.jpg" alt="Capa do EP Homúnculo, do Kaedro"></div>
+        <div class="corpo"><span class="rotulo">EP · 2015</span><h3>Kaedro · Homúnculo</h3><p>Quatro faixas eletrônicas, entre drum &amp; bass, dubstep e darkwave.</p>
+          <div class="links"><a href="https://soundcloud.com/julienossola/sets/kaedro-hom-nculo">soundcloud.com/julienossola/sets/kaedro-hom-nculo</a></div></div>
+      </article>
+      <article class="obra">
+        <div class="arte"><img src="img/kaedro-soundtracks.jpg" alt="Capa da trilha O Lamento do Violino"></div>
+        <div class="corpo"><span class="rotulo">Trilha · 2014</span><h3>KAEDRO Soundtracks</h3><p>Trilha instrumental de O Lamento do Violino. A música tema, The Bedroom, é a mais ouvida.</p>
+          <div class="links"><a href="https://soundcloud.com/kaedro">soundcloud.com/kaedro</a></div></div>
+      </article>
+    </div>
+    <div class="ilustra">
+      <img src="img/chuviscos.jpg" alt="Capa do livro Chuviscos, com ilustrações de Julien Reis Ossola">
+      <p><b>Julien Reis Ossola também ilustra.</b> Em 2021, o livro infantil <i>Chuviscos</i>, com ilustrações dele, foi contemplado pela Lei Aldir Blanc em Campos. A capa do Conteúdo Duvidoso também vai ser dele.</p>
+    </div>
+  </section>
+
+  <section class="secao" aria-labelledby="t-acess">
+    <h2 id="t-acess" class="rotulo" style="margin:0 0 14px">Acessibilidade</h2>
+    <div class="acess">
+      <svg viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="28" r="26" fill="none" stroke="#15130F" stroke-width="3"/><path d="M17 31c3-8 7-12 11-12s8 4 11 12" fill="none" stroke="#15130F" stroke-width="3" stroke-linecap="round"/><circle cx="28" cy="14" r="3.5" fill="#15130F"/><path d="M20 40h16" stroke="#15130F" stroke-width="3" stroke-linecap="round"/></svg>
+      <p>No lançamento, as seis músicas ganham vídeo de letra com legenda, três são traduzidas para Libras e as letras ficam em texto, como aqui, para quem usa leitor de tela.</p>
+    </div>
+  </section>
+</main>
+
+<div class="miolo">
+  <footer>
+    <span><b>Julien Reis Ossola</b> · Conteúdo Duvidoso · Campos dos Goytacazes, RJ · 2026</span>
+    <span>Página de prévia para a avaliação do edital. As guias não são o lançamento oficial.</span>
+  </footer>
+</div>
+
+<script src="faixas.js"></script>
+<script>
+(function(){
+  var lista = document.getElementById('faixas');
+  var faixas = window.FAIXAS || [];
+  var tocando = null;
+  var BARRAS = 72;
+
+  function semente(t){ var h = 2166136261; for (var i=0;i<t.length;i++){ h ^= t.charCodeAt(i); h = Math.imul(h,16777619); } return function(){ h ^= h<<13; h ^= h>>>17; h ^= h<<5; return ((h>>>0)%1000)/1000; }; }
+  function onda(titulo){
+    var r = semente(titulo), svg = '<svg viewBox="0 0 '+(BARRAS*6)+' 48" preserveAspectRatio="none" aria-hidden="true">';
+    for (var i=0;i<BARRAS;i++){ var a = 6 + Math.round((0.25 + 0.75*Math.abs(Math.sin(i/5.5))) * r() * 40); svg += '<rect x="'+(i*6)+'" y="'+((48-a)/2)+'" width="4" height="'+a+'" rx="2"/>'; }
+    return svg + '</svg>';
+  }
+  function mmss(s){ if(!isFinite(s)) return '0:00'; s = Math.floor(s); return Math.floor(s/60)+':'+String(s%60).padStart(2,'0'); }
+  function esc(t){ return String(t).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  var PLAY = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 3l12 7-12 7z" fill="currentColor"/></svg>';
+  var PAUSA = '<svg viewBox="0 0 20 20" aria-hidden="true"><rect x="4" y="3" width="4" height="14" rx="1" fill="currentColor"/><rect x="12" y="3" width="4" height="14" rx="1" fill="currentColor"/></svg>';
+
+  faixas.forEach(function(f, i){
+    var n = String(i+1).padStart(2,'0');
+    var el = document.createElement('article');
+    el.className = 'faixa';
+    el.innerHTML =
+      '<div class="lado">' +
+        '<div class="num" aria-hidden="true">'+n+'</div>' +
+        '<div><h3>'+esc(f.titulo)+'</h3><div class="por">Julien Reis Ossola · voz de Filipi Barbosa · guia</div></div>' +
+        (f.nota ? '<p class="nota">'+esc(f.nota)+'</p>' : '') +
+        '<div class="player">' +
+          '<button class="play" type="button" aria-label="Tocar '+esc(f.titulo)+'">'+PLAY+'</button>' +
+          '<div class="onda">'+onda(f.titulo+i)+'<input class="busca" type="range" min="0" max="1000" value="0" aria-label="Posição em '+esc(f.titulo)+'"></div>' +
+          '<div class="tempo"><span class="atual">0:00</span><span class="total">0:00</span></div>' +
+        '</div>' +
+      '</div>' +
+      '<div class="letra"><div class="rotulo"><span>Letra</span><span>'+esc(f.titulo)+' · Julien Reis Ossola</span></div><pre>'+esc((f.letra||'').trim())+'</pre></div>';
+    lista.appendChild(el);
+
+    var audio = new Audio(); audio.preload = 'metadata'; audio.src = f.arquivo;
+    var botao = el.querySelector('.play'), busca = el.querySelector('.busca'), barras = el.querySelectorAll('.onda rect');
+    var atual = el.querySelector('.atual'), total = el.querySelector('.total');
+    function pinta(p){ var k = Math.round(p*barras.length); for (var j=0;j<barras.length;j++) barras[j].classList.toggle('on', j<k); }
+    audio.addEventListener('loadedmetadata', function(){ total.textContent = mmss(audio.duration); });
+    audio.addEventListener('timeupdate', function(){ var p = audio.duration ? audio.currentTime/audio.duration : 0; busca.value = Math.round(p*1000); pinta(p); atual.textContent = mmss(audio.currentTime); });
+    audio.addEventListener('ended', function(){ botao.innerHTML = PLAY; el.classList.remove('tocando'); pinta(0); busca.value = 0; });
+    audio.addEventListener('error', function(){
+      var pl = el.querySelector('.player'); if (!pl) return;
+      var aviso = document.createElement('div'); aviso.className = 'embreve'; aviso.textContent = 'Guia em breve: o áudio desta faixa ainda não foi colocado na pasta.';
+      pl.replaceWith(aviso);
+    });
+    botao.addEventListener('click', function(){
+      if (audio.paused){
+        if (tocando && tocando.audio !== audio){ tocando.audio.pause(); tocando.botao.innerHTML = PLAY; tocando.el.classList.remove('tocando'); }
+        audio.play(); botao.innerHTML = PAUSA; botao.setAttribute('aria-label','Pausar '+f.titulo); el.classList.add('tocando'); tocando = {audio:audio, botao:botao, el:el};
+      } else { audio.pause(); botao.innerHTML = PLAY; botao.setAttribute('aria-label','Tocar '+f.titulo); el.classList.remove('tocando'); }
+    });
+    busca.addEventListener('input', function(){ if (audio.duration){ audio.currentTime = busca.value/1000*audio.duration; pinta(busca.value/1000); } });
+  });
+})();
+</script>
+</body>
+</html>
