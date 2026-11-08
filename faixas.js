@@ -182,15 +182,7 @@ Olha bem, eu sei...
 Olha bem, eu sei...
 Olha bem, eu sei...
 Me olha bem, eu sei.
-
-Eu vi
-Incerteza absoluta
-Paira em mim,
-Eu vou
-Me dar um fim,
-Eu vi
-Incerteza absoluta
-Sai de mim...`
+`
   },
   {
     titulo: "Perfume",
